@@ -347,9 +347,33 @@ document.addEventListener('DOMContentLoaded', function(){
                 body: JSON.stringify(form)
             })
             b.reset()
+            overlay.style.display = 'block'
+            thanks.style.display = 'block'
+			consultation.style.display = 'none';
+			order.style.display = 'none';
+            setTimeout(function() {
+                overlay.style.display = 'none'
+                thanks.style.display = 'none'
+            },4000)
         } else {
             console.error('error')
         }
     }
+    
+
+
+    //Scroll
+    
+
+    let pageUp =  document.querySelector('.pageup');
+
+    window.addEventListener('scroll', function() {
+        let scroll = pageYOffset;
+        if (scroll >= 1000) {
+            pageUp.style.display = 'block'
+        } else {
+            pageUp.style.display = 'none'
+        }
+    });
     
 });
