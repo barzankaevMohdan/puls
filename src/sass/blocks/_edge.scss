@@ -1,0 +1,33 @@
+.edge {
+    min-height: 470px;
+    background-color: #f6f6f6;
+    padding: 70px 0 85px 0;
+    &__icons {
+        margin-top: 75px;
+        display: flex;
+        justify-content: space-between;
+        width: 930px;
+    }
+    &__icon {
+        width: 240px;
+        text-align: center;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 300;
+        a {
+            color: $main-color;
+            text-transform: uppercase;
+        }
+        span{
+            display: block;
+            margin-bottom: 25px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 45px;
+        }
+    }
+}
